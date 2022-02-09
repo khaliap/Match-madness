@@ -13,11 +13,12 @@ const box3 = document.getElementById("3")
 const box4 = document.getElementById("4")
 
 const message = document.getElementById('resultDis')
+const startBtn = document.querySelector('button')
 //reslut input 
 let resultArr = [];
 
 //
-let pattern = [1,3]
+let pattern = [1,4,3]
 
 let currentIndex = 0;
 
@@ -29,12 +30,33 @@ let currentIndex = 0;
 
 
 box1.addEventListener("click",()=>{
-    resultArr.push(getID(box3))
+    resultArr.push(getID(box1))
     checkIndex()
-    
+    currentIndex ++
+})
+
+box2.addEventListener("click",()=>{
+  resultArr.push(getID(box2))
+  checkIndex()
+  currentIndex ++
 })
 
 
+box3.addEventListener("click",()=>{
+  resultArr.push(getID(box3))
+  checkIndex()
+  currentIndex ++
+})
+
+
+box4.addEventListener("click",()=>{
+  resultArr.push(getID(box4))
+  checkIndex()
+  currentIndex ++
+})
+
+
+console.log(resultArr)
 
 function checkIndex(){
     if(resultArr[currentIndex] !== pattern[currentIndex]){
@@ -83,7 +105,7 @@ function blinkBox(boxId){
 
 
 
-box1.addEventListener("click", ()=>{
+startBtn.addEventListener("click", ()=>{
   startGame();  
 })
 
