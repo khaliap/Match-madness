@@ -8,7 +8,7 @@ const box2 = document.getElementById("2")
 
 
 let boxTest = 1; 
-let pattern = [1,3]
+let pattern = [1,3,4]
 function sleep(ms) {
   return new Promise(resolve => {
     setTimeout(() => {resolve('')},ms)
