@@ -6,9 +6,58 @@ const box2 = document.getElementById("2")
 // box1.style.width = "100px"
 // box.style.height = "100px"
 
+// box2 = document.getElementById()
 
-let boxTest = 1; 
+const box3 = document.getElementById("3")
+
+const box4 = document.getElementById("4")
+
+const message = document.getElementById('resultDis')
+//reslut input 
+let resultArr = [];
+
+//
 let pattern = [1,3]
+
+let currentIndex = 0;
+
+// function ClickOnBox{
+//     resultArr.push()
+// }
+
+
+
+
+box3.addEventListener("click",()=>{
+    resultArr.push(getID(box3))
+    checkIndex()
+    
+})
+
+
+
+function checkIndex(){
+    if(resultArr[currentIndex] !== pattern[currentIndex]){
+        message.innerText = "wrong"
+    }else {
+        
+    }
+}
+
+function getID(currBox){
+    return Number(currBox.id)
+}
+
+
+
+console.log(getID(box3))
+
+
+
+
+
+
+
 function sleep(ms) {
   return new Promise(resolve => {
     setTimeout(() => {resolve('')},ms)
