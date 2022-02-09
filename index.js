@@ -28,7 +28,7 @@ let currentIndex = 0;
 
 
 
-box3.addEventListener("click",()=>{
+box1.addEventListener("click",()=>{
     resultArr.push(getID(box3))
     checkIndex()
     
@@ -38,12 +38,11 @@ box3.addEventListener("click",()=>{
 
 function checkIndex(){
     if(resultArr[currentIndex] !== pattern[currentIndex]){
-        message.innerText = "wrong"
-    }else {
-        
+        message.innerHTML = "wrong"
     }
-}
+  }
 
+  console.log(resultArr)
 function getID(currBox){
     return Number(currBox.id)
 }
