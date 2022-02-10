@@ -16,9 +16,10 @@ const message = document.getElementById('resultDis')
 const startBtn = document.querySelector('button')
 //reslut input 
 let resultArr = [];
-
+let randomOutput =[]
+let num = 3
 //
-let pattern = [1,4]
+let pattern = randomOutput;
 
 let currentIndex = 0;
 
@@ -33,12 +34,14 @@ box1.addEventListener("click",()=>{
     resultArr.push(getID(box1))
     checkIndex()
     currentIndex ++
+      LastMove()
 })
 
 box2.addEventListener("click",()=>{
   resultArr.push(getID(box2))
   checkIndex()
   currentIndex ++
+    LastMove()
 })
 
 
@@ -54,6 +57,7 @@ box4.addEventListener("click",()=>{
   resultArr.push(getID(box4))
   checkIndex()
   currentIndex ++
+    LastMove()
 })
 
 
@@ -111,15 +115,29 @@ function LastMove(){
     }
 }  
 
-const board = document.getElementById("game-grid")
+// const board = document.getElementById("game-grid")
 
 
 /// add last move func to all boxes, 
 
 ///
-board.addEventListener("click", LastMove())
-
+// board.addEventListener("click", LastMove())
+  
 startBtn.addEventListener("click", ()=>{
+  getRandomInt();
   startGame();  
 })
+
+
+  let randomOptions = [1,2,3,4]
+
+function getRandomInt() {
+while(randomOutput.length < num ){
+  let randomPattern =randomOptions[Math.floor(Math.random()* randomOptions.length)];
+  randomOutput.push(randomPattern)
+}
+// startGame();
+// console.log(randomOutput)
+}
+
 console.log("hello")
