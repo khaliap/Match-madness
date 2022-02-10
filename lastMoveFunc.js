@@ -82,12 +82,12 @@ function sleep(ms) {
 async function startGame(){
 for(let i =0; i <pattern.length; i ++){
   blinkBox(pattern[i])
-  await sleep(2000)
+  await sleep(1000)
 }
 }
 
 function blinkBox(boxId){
-    $("#" + boxId.toString()).fadeOut(1000).fadeIn(1000);
+    $("#" + boxId.toString()).fadeOut(200).fadeIn(200);
     
 }
 // $("#" + el.toString()).fadeOut(1000).fadeIn(1000);  
@@ -116,7 +116,7 @@ function LastMove(){
   
 startBtn.addEventListener("click", ()=>{
   getRandomInt();
-  startGame();  
+  // startGame();  
 })
 
 
@@ -128,7 +128,7 @@ while(randomOutput.length < num ){
   let randomPattern = randomOptions[Math.floor(Math.random()* randomOptions.length)];
   randomOutput.push(randomPattern)
 }
-
+startGame();  
 }
 
 
