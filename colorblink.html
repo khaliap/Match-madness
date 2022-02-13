@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Matching</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="colorblink.css">
+</head>
+<body>
+    <header>
+        <h1> Pattern Matching</h1>
+        <h3> Level 1</h3>
+    </header>
+    <div id="game-grid">
+<div class="game-box" id="1" onclick="toggleBox(1);">1</div>
+<audio hidden>
+    <source src="ding1.mp3"  type="audio/mpeg"/>
+</audio>
+<div class="game-box" id="2"  onclick="toggleBox(2);">2</div>
+<div class="game-box" id="3"  onclick="toggleBox(3);">3</div>
+<div class="game-box" id="4"  onclick="toggleBox(4);">4</div>
+
+    </div>
+    <button onclick="getRandomInt();">start</button>
+    <h1 id="resultDis"></h1>
+        <!--<script src="lastMoveFunc.js"></script> -->
+        <script src ="colorblink.js" defer></script>
+</body>
+</html>
