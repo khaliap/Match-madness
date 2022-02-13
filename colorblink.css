@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    background-color: aqua;
+    color: black;
+}
+header{
+    display: box;
+    justify-content: center;
+    align-items: center;
+}
+#game-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 8px;
+    margin: right 500px; ;
+    grid-template-columns: repeat(2, 1fr);    
+    grid-template-rows: repeat(2, 1fr);
+}
+.game-box{
+    background-color: black;
+    color: blueviolet;
+    height: 200px;
+    width: 200px;
+}
+/* blinking colors */
+.green{
+    background: green !important;
+}
+
+.purple{
+    background: purple !important;
+}
+
+.yellow{
+    background: yellow !important;
+}
+
+.pink{
+    background: pink !important;
+}
+
+
+/* Added hover*/
+.game-box:hover{
+box-shadow: inset 0px 0px 0px 5px;
+color:red;
+box-sizing: border-box;
+/* tell users what box they're about to click on*/
+}
