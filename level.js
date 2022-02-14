@@ -69,8 +69,8 @@ function getID(currBox){
     return Number(currBox.id)
 }
 
-
-
+let levelText = document.getElementById('level')
+console.log(levelText)
 console.log(getID(box3))
 
 
