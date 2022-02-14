@@ -43,8 +43,12 @@ $("#3").hover(()=>{ makeBoxBorderRed(box3)},()=> {turnBoxBack(box3)});
 $("#4").hover(()=>{ makeBoxBorderRed(box4)},()=> {turnBoxBack(box4)});
 
 
+// function changesColorBlinck(box){
+// }
+
+
 box1.addEventListener("click",()=>{
-    blinkBox(getID(box1))
+    // blinkBox(getID(box1))
     playAudio()
     resultArr.push(getID(box1))
     checkIndex()
@@ -57,7 +61,7 @@ box2.addEventListener("click",()=>{
   resultArr.push(getID(box2))
   checkIndex()
   currentIndex ++
-    LastMove()
+  LastMove()
 })
 
 
@@ -75,7 +79,7 @@ box4.addEventListener("click",()=>{
   resultArr.push(getID(box4))
   checkIndex()
   currentIndex ++
-    LastMove()
+  LastMove()
 })
 
 
@@ -85,7 +89,7 @@ function checkIndex(){
     if(resultArr[currentIndex] !== pattern[currentIndex]){
         message.innerHTML = "wrong"
     }
-    return true; 
+     
   }
 
   // console.log(resultArr)
@@ -135,30 +139,19 @@ function LastMove(){
     }
 }  
 
-// const board = document.getElementById("game-grid")
-
-
-/// add last move func to all boxes, 
-
-///
-// board.addEventListener("click", LastMove())
-  
 startBtn.addEventListener("click", ()=>{
-  getRandomInt();
-  // startGame();  
+  getRandomInt();  
 })
 
+let randomOptions = [1,2,3,4]
 
-  let randomOptions = [1,2,3,4]
-
-function getRandomInt() {
-  
-while(randomOutput.length < num ){
-  let randomPattern = randomOptions[Math.floor(Math.random()* randomOptions.length)];
-  randomOutput.push(randomPattern)
-}
-startGame();  
+function getRandomInt() {  
+  while(randomOutput.length < num ){
+    let randomPattern = randomOptions[Math.floor(Math.random()* randomOptions.length)];
+    randomOutput.push(randomPattern)
+  }
+  startGame();  
 }
 
 
-console.log("hello")
+console.log("making sure code works")
