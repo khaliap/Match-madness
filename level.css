@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    background-color: aqua;
+    color: black;
+}
+header{
+    display: box;
+    justify-content: center;
+    align-items: center;
+}
+#game-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 8px;
+    margin: right 500px; ;
+    grid-template-columns: repeat(2, 1fr);    
+    grid-template-rows: repeat(2, 1fr);
+}
+.game-box{
+    background-color: black;
+    color: blueviolet;
+    height: 200px;
+    width: 200px;
+} 
