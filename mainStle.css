@@ -9,6 +9,7 @@ body{
     background-image: url("https://steamuserimages-a.akamaihd.net/ugc/915787086994011927/5C57745B654D7F20DDE1FE0BFF542AE723079DDF/");
     background-position: center;
     /* background-color: #cccccc; */
+    background-size: auto
 }
 
 header{
@@ -24,8 +25,8 @@ header{
     grid-template-columns: repeat(2, 201px);    
 }
 .game-box{
-    background-color: black;
-    color: blueviolet;
+    background-color: white;
+    /* color: blueviolet; */
     height: 200px;
     width: 200px;
     border-radius: 20px;

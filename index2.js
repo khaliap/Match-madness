@@ -44,7 +44,7 @@ function makeBoxBorderRed(box){
 // box1.style.backgroundColor
 
 function turnBoxBack(box){
-  box.style.backgroundColor = "black"
+  box.style.backgroundColor = "white "
 }
 
 $("#1").hover(()=>{ makeBoxBorderRed(box1)},()=> {turnBoxBack(box1)});
@@ -57,8 +57,9 @@ $("#4").hover(()=>{ makeBoxBorderRed(box4)},()=> {turnBoxBack(box4)});
 // }
 
 
+
 box1.addEventListener("click",()=>{
-    // blinkBox(getID(box1))
+    blinkBox(getID(box1))
     playAudio()
     resultArr.push(getID(box1))
     checkIndex()
