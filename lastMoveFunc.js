@@ -15,18 +15,45 @@ let randomOutput =[]
 
 let num = 3
 //
+
+
+console.log("lastmoveFunc")
 let pattern = randomOutput
 
 let currentIndex = 0;
 
+let audio = document.getElementsByTagName("audio")[0];
+
+function playAudio() {
+  audio.play();
+}
+
+
+function makeBoxBorderRed(box){
+    box.style.border = "thick solid red"
+}
+
+function turnBoxBack(box){
+  box.style.border = "black"
+}
+
+$("#1").hover(()=>{ makeBoxBorderRed(box1)},()=> {turnBoxBack(box1)});
+$("#2").hover(()=>{ makeBoxBorderRed(box2)},()=> {turnBoxBack(box2)});
+$("#3").hover(()=>{ makeBoxBorderRed(box3)},()=> {turnBoxBack(box3)});
+$("#4").hover(()=>{ makeBoxBorderRed(box4)},()=> {turnBoxBack(box4)});
+
+
 box1.addEventListener("click",()=>{
+    blinkBox(getID(box1))
+    playAudio()
     resultArr.push(getID(box1))
     checkIndex()
     currentIndex ++
-      LastMove()
+    LastMove()
 })
 
 box2.addEventListener("click",()=>{
+  playAudio()
   resultArr.push(getID(box2))
   checkIndex()
   currentIndex ++
@@ -35,6 +62,7 @@ box2.addEventListener("click",()=>{
 
 
 box3.addEventListener("click",()=>{
+  playAudio()
   resultArr.push(getID(box3))
   checkIndex()
   currentIndex ++
@@ -43,6 +71,7 @@ box3.addEventListener("click",()=>{
 
 
 box4.addEventListener("click",()=>{
+  playAudio()
   resultArr.push(getID(box4))
   checkIndex()
   currentIndex ++
@@ -81,14 +110,14 @@ function sleep(ms) {
 
 async function startGame(){
 for(let i =0; i <pattern.length; i ++){
+  playAudio()
   blinkBox(pattern[i])
   await sleep(1000)
 }
 }
 
 function blinkBox(boxId){
-    $("#" + boxId.toString()).fadeOut(200).fadeIn(200);
-    
+    $("#" + boxId.toString()).fadeOut(200).fadeIn(200);   
 }
 // $("#" + el.toString()).fadeOut(1000).fadeIn(1000);  
 
