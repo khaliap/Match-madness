@@ -30,11 +30,21 @@ function playAudio() {
 
 
 function makeBoxBorderRed(box){
-    box.style.border = "thick solid red"
+  switch(box){
+    case box1 : box.style.backgroundColor = "lightcoral";
+      break;
+    case box2 : box.style.backgroundColor = "rgb(26,83,92)";
+      break;
+    case box3 : box.style.backgroundColor = "rgb(26,148,111)";
+      break;
+    case box4 : box.style.backgroundColor = "#0b032d";
+      break;
+  } 
 }
+// box1.style.backgroundColor
 
 function turnBoxBack(box){
-  box.style.border = "black"
+  box.style.backgroundColor = "black"
 }
 
 $("#1").hover(()=>{ makeBoxBorderRed(box1)},()=> {turnBoxBack(box1)});

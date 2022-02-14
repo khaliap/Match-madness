@@ -1,8 +1,8 @@
 *{
     box-sizing: border-box;
-    background-color:green;
+    background-color: forestgreen;
     color: white;
-    /* font-family:   */
+    font-family: sans-serif  
 }
 
 header{
@@ -11,24 +11,17 @@ header{
     align-items: center;
 }
 #game-grid{
-    /* width: 500px; */
     display: grid;
-    /* justify-content: end; */
     justify-items: center;
     justify-content: center;
-    /* justify-content: center; */
-    /* align-items: center; */
     grid-gap: 15px;
-    /* margin: right 500px; ; */
     grid-template-columns: repeat(2, 201px);    
-    /* grid-template-rows: repeat(2, 1fr); */
-    /* padding-left: 100; */
 }
 .game-box{
-    /* display: block; */
-    /* justify-content: center; */
     background-color: black;
     color: blueviolet;
     height: 200px;
     width: 200px;
+    border-radius: 20px;
 }  
+
