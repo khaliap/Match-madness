@@ -35,13 +35,13 @@ function playAudio() {
 
 function makeBoxBorderRed(box){
   switch(box){
-    case box1 : box.style.border = "thick solid lightcoral";
+    case box1 : box.style.border = "12px solid lightcoral";
       break;
-    case box2 : box.style.border = "thick solid rgb(26,83,92)";
+    case box2 : box.style.border = "12px solid rgb(26,83,92)";
       break;
-    case box3 : box.style.border = "thick solid rgb(26,148,111)";
+    case box3 : box.style.border = "12px solid rgb(26,148,111)";
       break;
-    case box4 : box.style.border = "thick solid #0b032d";
+    case box4 : box.style.border = "12px solid #0b032d";
       break;
   } 
 }
@@ -70,7 +70,7 @@ function changesColorBlinck(box){
 box1.addEventListener("click",()=>{
     // blinkBoxclick(getID(box1))
     // playAudio()
-    changesColorBlinck(box1)
+    // changesColorBlinck(box1)
     resultArr.push(getID(box1))
     checkIndex()
     currentIndex ++
@@ -79,7 +79,7 @@ box1.addEventListener("click",()=>{
 
 box2.addEventListener("click",()=>{
   // playAudio()
-  changesColorBlinck(box2)
+  // changesColorBlinck(box2)
   resultArr.push(getID(box2))
   checkIndex()
   currentIndex ++
@@ -89,7 +89,7 @@ box2.addEventListener("click",()=>{
 
 box3.addEventListener("click",()=>{
   // playAudio()
-  changesColorBlinck(box3)
+  // changesColorBlinck(box3)
   resultArr.push(getID(box3))
   checkIndex()
   currentIndex ++
@@ -99,7 +99,7 @@ box3.addEventListener("click",()=>{
 
 box4.addEventListener("click",()=>{
   // playAudio()
-  changesColorBlinck(box4)
+  // changesColorBlinck(box4)
   resultArr.push(getID(box4))
   checkIndex()
   currentIndex ++
