@@ -35,26 +35,26 @@ function playAudio() {
 
 function makeBoxBorderRed(box){
   switch(box){
-    case box1 : box.style.backgroundColor = "lightcoral";
+    case box1 : box.style.border = "thick solid lightcoral";
       break;
-    case box2 : box.style.backgroundColor = "rgb(26,83,92)";
+    case box2 : box.style.border = "thick solid rgb(26,83,92)";
       break;
-    case box3 : box.style.backgroundColor = "rgb(26,148,111)";
+    case box3 : box.style.border = "thick solid rgb(26,148,111)";
       break;
-    case box4 : box.style.backgroundColor = "#0b032d";
+    case box4 : box.style.border = "thick solid #0b032d";
       break;
   } 
 }
 // box1.style.backgroundColor
 
 function turnBoxBack(box){
-  box.style.backgroundColor = "white"
+  box.style.border = "white"
 }
 
-// $("#1").hover(()=>{ makeBoxBorderRed(box1)},()=> {turnBoxBack(box1)});
-// $("#2").hover(()=>{ makeBoxBorderRed(box2)},()=> {turnBoxBack(box2)});
-// $("#3").hover(()=>{ makeBoxBorderRed(box3)},()=> {turnBoxBack(box3)});
-// $("#4").hover(()=>{ makeBoxBorderRed(box4)},()=> {turnBoxBack(box4)});
+$("#1").hover(()=>{ makeBoxBorderRed(box1)},()=> {turnBoxBack(box1)});
+$("#2").hover(()=>{ makeBoxBorderRed(box2)},()=> {turnBoxBack(box2)});
+$("#3").hover(()=>{ makeBoxBorderRed(box3)},()=> {turnBoxBack(box3)});
+$("#4").hover(()=>{ makeBoxBorderRed(box4)},()=> {turnBoxBack(box4)});
 
 
 function changesColorBlinck(box){
@@ -143,7 +143,7 @@ function blinkBox(boxId){
 } 
 
 function blinkBoxclick(boxId){
-  $("#" + boxId.toString()).fadeOut(100).fadeIn(100);   
+  $("#" + boxId.toString()).fadeOut(70).fadeIn(70);   
 }
 /// adding to last move function. 
 // gonna add a flag to confirm if the palyer is ever wrong 
