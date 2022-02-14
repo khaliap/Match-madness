@@ -1,8 +1,14 @@
 *{
     box-sizing: border-box;
-    background-color: forestgreen;
+    /* background-color: forestgreen; */
     color: white;
     font-family: sans-serif  
+}
+
+body{
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/915787086994011927/5C57745B654D7F20DDE1FE0BFF542AE723079DDF/");
+    background-position: center;
+    /* background-color: #cccccc; */
 }
 
 header{
