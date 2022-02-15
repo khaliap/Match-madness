@@ -59,7 +59,9 @@ console.log(resultArr)
 
 function checkIndex(){
     if(resultArr[currentIndex] !== pattern[currentIndex]){
-        message.innerHTML = "wrong"
+        message.innerHTML = "Wrong"
+
+
         // levelText.innerHTML = '1'
     }
     return true; 
@@ -108,7 +110,6 @@ function blinkBox(boxId){
 function LastMove(){
     if(currentIndex === pattern.length){
          message.innerHTML = "Level Complete"
-        //  console.log("kshbckhsbckhsdb")
          num++;
          currentIndex = 0;
          resultArr = [];
@@ -118,9 +119,6 @@ function LastMove(){
          levelTextFunc()
     }
 }  
-
-// const board = document.getElementById("game-grid")
-
 
 /// add last move func to all boxes, 
 
@@ -145,5 +143,4 @@ startGame();
 }
 
 
-console.log("hello")
 
