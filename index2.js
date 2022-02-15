@@ -29,7 +29,7 @@ function makeBoxBorderRed(box){
       break;
     case box3 : box.style.border = "12px solid rgb(26,148,111)";
       break;
-    case box4 : box.style.border = "12px solid #0B032D";
+    case box4 : box.style.border = "12px solid rgb(0,58,36)";
       break;
   }
 }

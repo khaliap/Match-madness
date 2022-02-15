@@ -35,6 +35,31 @@ header{
 #resultBox{
     /* background-color: aquamarine; */
     height: 60px;
-    width: 250px;
+    /*width: 250px;*/
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
 }
 
+button{
+    background-color: white;
+    color: #003a24;
+    padding: 0;
+    border: none;
+    /*background: none;*/
+    width:100px;
+    height: 30px;
+}
+
+button:hover{
+    border: 3px solid #003a24;
+}
+
+#b{
+    display: flex;
+    justify-content: center;
+}
+
+/*#resultBox{*/
+/*}*/
