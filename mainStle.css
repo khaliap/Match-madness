@@ -2,7 +2,9 @@
     box-sizing: border-box;
     /* background-color: forestgreen; */
     color: white;
-    font-family: sans-serif  
+    font-family: sans-serif;  
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -16,6 +18,7 @@ header{
     /* display: box; */
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
 }
 #game-grid{
     display: grid;
@@ -35,6 +38,40 @@ header{
 #resultBox{
     /* background-color: aquamarine; */
     height: 60px;
-    width: 250px;
+    /*width: 250px;*/
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+     /*margin: 0 0 50px 0;*/
 }
 
+button{
+    background-color: white;
+    color: #003a24;
+    padding: 0;
+    border: none;
+    /*background: none;*/
+    width:100px;
+    height: 30px;
+    
+}
+
+button:hover{
+    border: 3px solid #003a24;
+    cursor: pointer;
+}
+
+#b{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    font-size: xx-large;
+}
+
+h1{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}

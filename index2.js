@@ -23,19 +23,19 @@ function playAudio() {
 }
 function makeBoxBorderRed(box){
   switch(box){
-    case box1 : box.style.border = "12px solid lightcoral";
+    case box1 : box.style.backgroundColor = "lightcoral";
       break;
-    case box2 : box.style.border = "12px solid rgb(26,83,92)";
+    case box2 : box.style.backgroundColor = "rgb(26,83,92)";
       break;
-    case box3 : box.style.border = "12px solid rgb(26,148,111)";
+    case box3 : box.style.backgroundColor = "rgb(26,148,111)";
       break;
-    case box4 : box.style.border = "12px solid #0B032D";
+    case box4 : box.style.backgroundColor = "rgb(0,58,36)";
       break;
   }
 }
 // box1.style.backgroundColor
 function turnBoxBack(box){
-  box.style.border = "white"
+  box.style.backgroundColor = "white"
 }
 $("#1").hover(()=>{ makeBoxBorderRed(box1)},()=> {turnBoxBack(box1)});
 $("#2").hover(()=>{ makeBoxBorderRed(box2)},()=> {turnBoxBack(box2)});
@@ -47,7 +47,7 @@ function changesColorBlinck(box){
   box.style.background = "white"
 }
 box1.addEventListener("click",()=>{
-    // blinkBoxclick(getID(box1))
+    blinkBoxclick(getID(box1))
     // playAudio()
     // changesColorBlinck(box1)
     resultArr.push(getID(box1))
@@ -56,6 +56,7 @@ box1.addEventListener("click",()=>{
     LastMove()
 })
 box2.addEventListener("click",()=>{
+  blinkBoxclick(getID(box2))
   // playAudio()
   // changesColorBlinck(box2)
   resultArr.push(getID(box2))
@@ -64,6 +65,7 @@ box2.addEventListener("click",()=>{
   LastMove()
 })
 box3.addEventListener("click",()=>{
+  blinkBoxclick(getID(box3))
   // playAudio()
   // changesColorBlinck(box3)
   resultArr.push(getID(box3))
@@ -72,6 +74,7 @@ box3.addEventListener("click",()=>{
   LastMove()
 })
 box4.addEventListener("click",()=>{
+  blinkBoxclick(getID(box4))
   // playAudio()
   // changesColorBlinck(box4)
   resultArr.push(getID(box4))
@@ -110,7 +113,7 @@ function blinkBox(boxId){
     $("#" + boxId.toString()).fadeOut(200).fadeIn(200);  
 }
 function blinkBoxclick(boxId){
-  $("#" + boxId.toString()).fadeOut(70).fadeIn(70);  
+  $("#" + boxId.toString()).fadeOut(20).fadeIn(20);  
 }
 /// adding to last move function.
 // gonna add a flag to confirm if the palyer is ever wrong
