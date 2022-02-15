@@ -50,15 +50,21 @@ button{
     /*background: none;*/
     width:100px;
     height: 30px;
+    
 }
 
 button:hover{
     border: 3px solid #003a24;
+    cursor: pointer;
 }
 
 #b{
     display: flex;
     justify-content: center;
+}
+
+h3{
+    font-size: xx-large;
 }
 
 /*#resultBox{*/
