@@ -83,7 +83,10 @@ console.log(resultArr)
 let booFlag = true
 function checkIndex(){
     if(resultArr[currentIndex] !== pattern[currentIndex]){
-        message.innerHTML = "level rest"
+        message.innerHTML = "level reseting"
+        setTimeout(function () {
+          message.innerHTML = " "
+      }, 3000);
         booFlag = false
     }
   }
@@ -115,11 +118,15 @@ let currLevel = 1;
 const levelText = document.querySelector('span')
 function LastMove(){
     if(booFlag && currentIndex === pattern.length){
-      console.log("next stage")
+      message.innerHTML = "Level complete"
+      setTimeout(function () {
+        message.innerHTML = " "
+    }, 3000);
       num++;
       currentIndex = 0
       clearArrayAndNewPattern();
       levelTextFunc();
+      levelDelay()
     }
     else if(!booFlag){
       console.log("reset game")
@@ -154,3 +161,12 @@ function getRandomInt() {
   }
 }
 console.log("making sure code works")
+
+function levelDelay(){
+
+  setTimeout(startGame, 3000)
+  // message.innerHTML = " "
+}
+
+
+console.log('making chnages to see if it pushes')
