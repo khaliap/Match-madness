@@ -32,5 +32,9 @@ header{
     border-radius: 20px;
 }
 
-
+#resultBox{
+    /* background-color: aquamarine; */
+    height: 60px;
+    width: 250px;
+}
 
